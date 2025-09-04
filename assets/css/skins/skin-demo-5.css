@@ -597,8 +597,11 @@ a:focus {
 .close:focus {
   color: #ef588a;
 }
+.page-header h1 {
+  color: #001960;
+}
 .page-header h1 span {
-  color: #ef588a;
+  color: #000;
 }
 .page-link:hover,
 .page-link:focus {

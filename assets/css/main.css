@@ -12478,13 +12478,13 @@ button:focus {
   background-color: #ccc;
   margin: 0;
 }
-.portfolio-media > a {
+.portfolio-media > div {
   position: relative;
   display: block;
   overflow: hidden;
   outline: none !important;
 }
-.portfolio-media > a:after {
+.portfolio-media > div:after {
   content: "";
   display: block;
   position: absolute;
@@ -12504,9 +12504,9 @@ button:focus {
   width: 100%;
   height: auto;
 }
-.portfolio-item:hover .portfolio-media > a:after {
+.portfolio-item:hover .portfolio-media > div:after {
   visibility: visible;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 .portfolio-item:hover .portfolio-content {
   background-color: #f6f6f6;
@@ -12533,7 +12533,8 @@ button:focus {
 .portfolio-tags {
   font-weight: 300;
   font-size: 1.3rem;
-  letter-spacing: -0.01em;
+  letter-spacing: 0;
+  color: #fff !important;
 }
 .portfolio-tags a {
   color: #c96;
@@ -12555,6 +12556,7 @@ button:focus {
   padding: 2rem 3rem;
   opacity: 0;
   z-index: 2;
+
   visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
@@ -12590,6 +12592,24 @@ button:focus {
     flex-wrap: wrap;
     justify-content: center;
   }
+}
+@media screen and (max-width: 768px) {
+  .portfolio-overlay .portfolio-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 3rem;
+    opacity: 1;
+    z-index: 2;
+    background-color: rgba(0, 25, 96, 0.5);
+    visibility: visible;
+    -webkit-backface-visibility: visible;
+  }
+  /* .portfolio-item .portfolio-media > div:after {
+    visibility: visible;
+    opacity: 0.6;
+  } */
 }
 .about-images {
   position: relative;
