@@ -1836,13 +1836,13 @@ blockquote.text-white cite span {
 .menu .banner-title {
   margin: 0;
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   line-height: 1.25;
   text-transform: uppercase;
   letter-spacing: 0;
 }
 .menu .banner-title span {
-  font-size: 2.4rem;
+  font-size: 2.1rem;
 }
 .menu .banner-content-top .banner-title span {
   line-height: 1.05;
@@ -8393,6 +8393,10 @@ p {
   font-size: 1.2rem;
   background-color: #001960 !important;
   border: 1px solid #001960 !important;
+  margin-right: 1rem !important;
+}
+.footer .social-icon:last-child {
+  margin-right: 0 !important;
 }
 .footer .social-icon:hover {
   background-color: #fff !important;
