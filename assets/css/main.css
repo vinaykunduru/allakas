@@ -8395,6 +8395,9 @@ p {
   border: 1px solid #001960 !important;
   margin-right: 1rem !important;
 }
+.footer .social-icon i {
+  color: #fff;
+}
 .footer .social-icon:last-child {
   margin-right: 0 !important;
 }
