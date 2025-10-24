@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Allakas</title>
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="" />
+    <meta name="author" content="p-themes" />
+    <!-- Favicon -->
+
+    <link rel="icon" type="image/png" href="assets/images/icon.png" />
+
+    <link rel="shortcut icon" href="assets/images/icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Molla" />
+    <meta name="application-name" content="Allakas" />
+    <meta name="msapplication-TileColor" content="#cc9966" />
+    <meta
+      name="msapplication-config"
+      content="assets/images/icons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Plugins CSS File -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/plugins/owl-carousel/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/plugins/magnific-popup/magnific-popup.css"
+    />
+    <link rel="stylesheet" href="assets/css/plugins/jquery.countdown.css" />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/skins/skin-demo-5.css" />
+    <link rel="stylesheet" href="assets/css/demos/demo-5.css" />
+    <style>
+      header.header {
+        background-color: #001960;
+      }
+
+      .socialLink {
+        margin-right: 20px;
+      }
+      .socialLink:last-child {
+        margin-right: 0;
+      }
+
+      .socialLink img {
+        width: 24px;
+      }
+    </style>
+    <style>
+      body {
+        font-family: "Poppins", Arial, sans-serif;
+        background: #fff;
+        color: #222;
+      }
+      .card-grid {
+        border-radius: 12px;
+        overflow: hidden;
+        background: #f6f6f6;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+      }
+      .feature-title {
+        font-weight: 700;
+        font-size: 1.6rem;
+        letter-spacing: -0.5px;
+      }
+      .feature-sub {
+        color: #6b6b6b;
+        font-size: 0.95rem;
+        margin-top: 0.6rem;
+      }
+      /* thumbnails */
+      .thumb {
+        border-radius: 10px;
+        overflow: hidden;
+        display: block;
+      }
+      .thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .thumb-small {
+        height: 110px;
+      }
+      .thumb-medium {
+        height: 140px;
+      }
+      .thumb-large {
+        height: 100%;
+        min-height: 320px;
+      } /* right side main */
+      /* overlay play button */
+      .play-overlay {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 76px;
+        height: 76px;
+        border-radius: 50%;
+        background: rgba(14, 123, 221, 0.95);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 6px 18px rgba(14, 123, 221, 0.25);
+      }
+      .play-overlay svg {
+        width: 28px;
+        height: 28px;
+        fill: #fff;
+      }
+      .right-cta {
+        position: absolute;
+        bottom: 18px;
+        left: 18px;
+        display: flex;
+        gap: 10px;
+      }
+      .btn-ghost {
+        background: rgba(255, 255, 255, 0.95);
+        color: #0e1a60;
+        border-radius: 999px;
+        padding: 10px 18px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+        font-weight: 600;
+      }
+      /* responsive spacing for left content */
+      .left-inner {
+        padding: 28px;
+      }
+      @media (max-width: 767.98px) {
+        .thumb-small {
+          height: 90px;
+        }
+        .left-inner {
+          padding: 18px 14px;
+        }
+        .feature-title {
+          font-size: 1.35rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <header class="header header-5">
+        <div class="header-middle sticky-header">
+          <div class="container-fluid">
+            <div class="header-left">
+              <button class="mobile-menu-toggler">
+                <span class="sr-only">Toggle mobile menu</span>
+                <i class="icon-bars"></i>
+              </button>
+
+              <a href="index.html" class="logo">
+                <img
+                  src="assets/images/logo.svg"
+                  alt="Allakas"
+                  width="135"
+                  height="25"
+                />
+              </a>
+
+              <nav class="main-nav">
+                <ul class="menu sf-arrows">
+                  <li class="">
+                    <a href="index.html" class="">Home</a>
+                  </li>
+                  <li class="active">
+                    <a href="about.html" class="">About us</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="sf-with-ul">Products</a>
+
+                    <div class="megamenu megamenu-sm">
+                      <div class="row no-gutters">
+                        <div class="col-md-6">
+                          <div class="menu-col">
+                            <div class="menu-title">Collections</div>
+                            <!-- End .menu-title -->
+                            <ul>
+                              <li><a href="women.html">Women</a></li>
+                              <li>
+                                <a href="men.html">Men</a>
+                              </li>
+
+                              <li>
+                                <a href="kids.html">Kids</a>
+                              </li>
+                              <li>
+                                <a href="ethnic.html">Ethnic wear</a>
+                              </li>
+                              <li>
+                                <a href="silk.html">Silk wear</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <!-- End .menu-col -->
+                        </div>
+                        <!-- End .col-md-6 -->
+
+                        <div class="col-md-6">
+                          <div class="banner banner-overlay">
+                            <a href="#">
+                              <img
+                                src="assets/images/menu/banner-2.jpg"
+                                alt="Banner"
+                              />
+
+                              <div class="banner-content banner-content-bottom">
+                                <div class="banner-title text-white">
+                                  New Trends<br /><span
+                                    ><strong>Dussehra 2025</strong></span
+                                  >
+                                </div>
+                                <!-- End .banner-title -->
+                              </div>
+                              <!-- End .banner-content -->
+                            </a>
+                          </div>
+                          <!-- End .banner -->
+                        </div>
+                        <!-- End .col-md-6 -->
+                      </div>
+                      <!-- End .row -->
+                    </div>
+                    <!-- End .megamenu megamenu-sm -->
+                  </li>
+                  <!-- <li>
+                    <a href="#" class="">Offers</a>
+                  </li> -->
+                  <li>
+                    <a href="contact.html" class="">Contact</a>
+                  </li>
+                </ul>
+                <!-- End .menu -->
+              </nav>
+              <!-- End .main-nav -->
+            </div>
+            <!-- End .header-left -->
+
+            <div class="header-right">
+              <div class="social-icons">
+                <a
+                  href="https://www.facebook.com/allakasmall"
+                  class="social-icon"
+                  target="_blank"
+                  title="Facebook"
+                  ><i class="icon-facebook-f"></i
+                ></a>
+
+                <a
+                  href="https://www.instagram.com/allakasmall"
+                  class="social-icon"
+                  target="_blank"
+                  title="Instagram"
+                  ><i class="icon-instagram"></i
+                ></a>
+                <a
+                  href="https://twitter.com/allakasmall"
+                  class="social-icon"
+                  target="_blank"
+                  title="Twitter"
+                  ><i class="icon-twitter"></i
+                ></a>
+              </div>
+            </div>
+            <!-- End .header-right -->
+          </div>
+          <!-- End .container-fluid -->
+        </div>
+        <!-- End .header-middle -->
+      </header>
+      <!-- End .header -->
+
+      <main class="main" style="margin-top: 70px">
+        <nav aria-label="breadcrumb" class="breadcrumb-nav border-0 mb-0">
+          <div class="container-fluid">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                About us
+              </li>
+            </ol>
+          </div>
+          <!-- End .container -->
+        </nav>
+        <!-- End .breadcrumb-nav -->
+        <div class="container-fluid">
+          <div
+            class="page-header page-header-big text-center"
+            style="background-image: url('assets/images/about-header-bg.jpg')"
+          >
+            <h1 class="page-title text-white">
+              About us<span class="text-white">Who we are</span>
+            </h1>
+          </div>
+          <!-- End .page-header -->
+        </div>
+        <!-- End .container -->
+
+        <div class="page-content pb-0">
+          <div class="container py-5">
+            <!-- Card style grid -->
+            <div class="card-grid row no-gutters">
+              <!-- LEFT: Title + small thumbs (order on md) -->
+              <div class="col-md-6 order-2 order-md-1">
+                <div
+                  class="left-inner h-100 d-flex flex-column justify-content-start"
+                >
+                  <div
+                    class="mb-3 text-uppercase"
+                    style="font-size: 0.78rem; color: #9b9b9b; font-weight: 600"
+                  >
+                    For everyone but not anyone
+                  </div>
+
+                  <h2 class="feature-title">
+                    We establish personal relationships with our boutiques
+                  </h2>
+                  <p class="feature-sub">
+                    Each boutique is carefully vetted to ensure a stress-free,
+                    curated shopping experience for you and your family.
+                  </p>
+
+                  <!-- Small thumbnail grid -->
+                  <div class="row mt-4">
+                    <div class="col-6 mb-3">
+                      <!-- Image lightbox -->
+                      <a
+                        href="https://via.placeholder.com/1200x800.png?text=Image+1"
+                        class="thumb thumb-small glightbox"
+                        data-gallery="grid"
+                        data-title="Ripstop hat — durable fabric"
+                      >
+                        <img
+                          src="https://images.unsplash.com/photo-1534790566855-4cb788d389ec?auto=format&fit=crop&w=600&q=80"
+                          alt="Ripstop"
+                        />
+                      </a>
+                      <div
+                        class="mt-2"
+                        style="font-weight: 600; font-size: 0.9rem"
+                      >
+                        #RIPSTOP
+                      </div>
+                    </div>
+
+                    <div class="col-6 mb-3">
+                      <a
+                        href="https://www.youtube.com/watch?v=ysz5S6PUM-U"
+                        class="thumb thumb-small glightbox"
+                        data-gallery="grid"
+                        data-type="video"
+                        data-title="Insulated cap — behind the scenes"
+                      >
+                        <img
+                          src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=600&q=80"
+                          alt="Insulated"
+                        />
+                      </a>
+                      <div
+                        class="mt-2"
+                        style="font-weight: 600; font-size: 0.9rem"
+                      >
+                        #INSULATED
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- RIGHT: large image/video thumbnail with overlay CTAs -->
+              <div class="col-md-6 order-1 order-md-2 position-relative">
+                <div style="position: relative; padding: 18px">
+                  <a
+                    href="https://www.youtube.com/watch?v=ysz5S6PUM-U"
+                    class="glightbox"
+                    data-type="video"
+                    data-gallery="main"
+                    data-title="Feature film — behind the scenes"
+                    aria-label="Play video"
+                  >
+                    <div
+                      class="thumb thumb-large"
+                      style="
+                        border-radius: 12px;
+                        overflow: hidden;
+                        position: relative;
+                      "
+                    >
+                      <!-- Replace this placeholder with your actual video thumbnail or image -->
+                      <img
+                        src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1200&q=80"
+                        alt="Feature"
+                        class="img-fluid"
+                      />
+                      <!-- Play icon overlay -->
+                      <div class="play-overlay" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                          <path d="M8 5v14l11-7z" />
+                        </svg>
+                      </div>
+                      <!-- Optional text badge bottom-left -->
+                      <div class="right-cta">
+                        <a href="#learn" class="btn-ghost">Learn More</a>
+                        <a href="#contact" class="btn-ghost">Contact Us</a>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- /.card-grid -->
+          </div>
+          <!-- /.container -->
+
+          <!-- Optional: small credits -->
+
+          <!-- End .container -->
+        </div>
+        <!-- End .page-content -->
+      </main>
+      <!-- End .main -->
+
+      <footer class="footer footer-2">
+        <div class="footer-middle border-0">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12 col-lg-6">
+                <div class="widget widget-about">
+                  <img
+                    src="assets/images/logo-blue-text.svg"
+                    class="footer-logo"
+                    alt="Footer Logo"
+                    width="180"
+                    height="25"
+                  />
+                  <p>
+                    Praesent dapibus, neque id cursus ucibus, tortor neque
+                    egestas augue, eu vulputate magna eros eu erat. Aliquam erat
+                    volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+                    facilisis luctus, metus.
+                  </p>
+                </div>
+                <!-- End .widget about-widget -->
+              </div>
+              <!-- End .col-sm-12 col-lg-3 -->
+
+              <div class="col-sm-4 col-lg-2 offset-lg-2">
+                <div class="widget">
+                  <h4 class="widget-title">Information</h4>
+                  <!-- End .widget-title -->
+
+                  <ul class="widget-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Allakas</a></li>
+                    <li><a href="#">Products</a></li>
+
+                    <li><a href="contact.html">Contact us</a></li>
+                  </ul>
+                  <!-- End .widget-list -->
+                </div>
+                <!-- End .widget -->
+              </div>
+              <!-- End .col-sm-4 col-lg-3 -->
+
+              <div class="col-sm-4 col-lg-2">
+                <div class="widget">
+                  <h4 class="widget-title">Contact</h4>
+                  <!-- End .widget-title -->
+
+                  <ul class="widget-list with-icons">
+                    <li>
+                      <i class="icon-map-marker"></i>
+                      Kalimatha Mandir main road, Sun city, Hyderabad- 91
+                    </li>
+                    <li>
+                      <i class="icon-phone"></i>
+                      <a href="tel:+918019672999">+91 8019672999</a>
+                    </li>
+                    <li>
+                      <i class="icon-envelope"></i>
+                      <a href="mailto:info@allakas.com">info@allakas.com</a>
+                    </li>
+                  </ul>
+                  <!-- End .widget-list -->
+                </div>
+                <!-- End .widget -->
+              </div>
+              <!-- End .col-sm-4 col-lg-3 -->
+            </div>
+            <!-- End .row -->
+          </div>
+          <!-- End .container -->
+        </div>
+        <!-- End .footer-middle -->
+
+        <div class="footer-bottom">
+          <div class="container-fluid">
+            <p class="footer-copyright">
+              Copyright © 2025 Allakas. All Rights Reserved.
+            </p>
+            <!-- End .footer-copyright -->
+
+            <div class="social-icons social-icons-color">
+              <div
+                class="social-icons social-icons-colored justify-content-center"
+              >
+                <a
+                  href="https://www.facebook.com/allakasmall"
+                  class="social-icon social-facebook"
+                  title="Facebook"
+                  target="_blank"
+                  ><i class="icon-facebook-f"></i
+                ></a>
+                <a
+                  href="https://twitter.com/allakasmall"
+                  class="social-icon social-twitter"
+                  title="Twitter"
+                  target="_blank"
+                  ><i class="icon-twitter"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/allakasmall"
+                  class="social-icon social-instagram"
+                  title="Instagram"
+                  target="_blank"
+                  ><i class="icon-instagram"></i
+                ></a>
+              </div>
+              <!-- End .soial-icons -->
+            </div>
+            <!-- End .soial-icons -->
+          </div>
+          <!-- End .container -->
+        </div>
+        <!-- End .footer-bottom -->
+      </footer>
+      <!-- End .footer -->
+    </div>
+    <!-- End .page-wrapper -->
+    <button id="scroll-top" title="Back to Top">
+      <i class="icon-arrow-up"></i>
+    </button>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay"></div>
+    <!-- End .mobil-menu-overlay -->
+
+    <div class="mobile-menu-container">
+      <div class="mobile-menu-wrapper">
+        <span class="mobile-menu-close"><i class="icon-close"></i></span>
+
+        <nav class="mobile-nav">
+          <ul class="mobile-menu">
+            <li class="active">
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About Allakas</a>
+            </li>
+            <li>
+              <a href="#" class="sf-with-ul">Products</a>
+              <ul>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="men.html">Men</a></li>
+                <li>
+                  <a href="kids.html">Kids</a>
+                </li>
+                <li>
+                  <a href="ethnic.html">Ethnic wear</a>
+                </li>
+                <li>
+                  <a href="silk.html">Silk wear</a>
+                </li>
+              </ul>
+            </li>
+            <!-- <li>
+              <a href="#">Offers</a>
+            </li> -->
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- End .mobile-nav -->
+
+        <div class="social-icons">
+          <a
+            href="https://www.facebook.com/allakasmall"
+            class="social-icon"
+            target="_blank"
+            title="Facebook"
+            ><i class="icon-facebook-f"></i
+          ></a>
+          <a
+            href="https://twitter.com/allakasmall"
+            class="social-icon"
+            target="_blank"
+            title="Twitter"
+            ><i class="icon-twitter"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/allakasmall"
+            class="social-icon"
+            target="_blank"
+            title="Instagram"
+            ><i class="icon-instagram"></i
+          ></a>
+        </div>
+        <!-- End .social-icons -->
+      </div>
+      <!-- End .mobile-menu-wrapper -->
+    </div>
+    <!-- End .mobile-menu-container -->
+
+    <!-- Plugins JS File -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.hoverIntent.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/superfish.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- GLightbox v3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    <script>
+      // Initialize GLightbox
+      const lightbox = GLightbox({
+        selector: ".glightbox",
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: false,
+        plyr: { css: "", js: "" }, // use default
+      });
+
+      // Accessibility: close on ESC handled by GLightbox
+    </script>
+  </body>
+</html>

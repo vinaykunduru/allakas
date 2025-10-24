@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Allakas Shopping Mall Grand Opening</title>
+    <link rel="icon" type="image/png" href="assets/images/icon.png" />
+
+    <link rel="shortcut icon" href="assets/images/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        font-family: "Montserrat", sans-serif;
+        background: #fdfdfd;
+        color: #222;
+      }
+      header {
+        /* background: url("/assets/images/landing.jpg") center/cover no-repeat; */
+        height: 70vh;
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff; */
+        position: relative;
+        overflow: hidden;
+      }
+      header::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.1);
+      }
+      header .content {
+        position: relative;
+        z-index: 2;
+      }
+      header h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      .timer {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin: 2rem 0;
+        font-size: 1rem;
+      }
+      .timer div {
+        text-align: center;
+      }
+      .details {
+        text-align: center;
+        padding: 2rem 1rem;
+      }
+      .details h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      .details p {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+      }
+      .social {
+        text-align: center;
+        margin: 2rem 0 1rem 0;
+        display: flex;
+        justify-content: center; /* Centers horizontally */
+        gap: 20px; /* Space between icons */
+      }
+      .social a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        background: #0e1a60; /* Navy blue */
+        color: #fff;
+        border-radius: 50%;
+        font-size: 20px;
+        transition: 0.3s ease-in-out;
+        text-decoration: none;
+      }
+      .social a img {
+        width: 18px;
+        height: auto;
+      }
+      footer {
+        text-align: center;
+        background: #001960;
+        color: #fff;
+        padding: 1rem;
+        margin-top: 2rem;
+      }
+      #countdown span {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #001960;
+        /* text-shadow: 0px 0px 8px rgba(14, 123, 221, 0.5); */
+      }
+      @media screen and (max-width: 768px) {
+        body {
+          background-color: #fff;
+        }
+        header {
+          height: auto;
+        }
+        .social {
+          margin: 1rem 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="assets/images/banner.jpg" style="width: 100%; height: auto" />
+      <!-- <div class="content">
+        <h1>Allakas Shopping Mall</h1>
+        <p>Grand Opening with <strong>OG Movie Fame Priyanka Mohan</strong></p>
+        <p><strong>22nd September, 11:00 AM</strong></p>
+      </div> -->
+    </header>
+
+    <section class="details">
+      <h2>Countdown to the Grand Opening</h2>
+      <div class="timer" id="countdown">
+        <div><span id="days">00</span><br />Days</div>
+        <div><span id="hours">00</span><br />Hours</div>
+        <div><span id="minutes">00</span><br />Minutes</div>
+        <div><span id="seconds">00</span><br />Seconds</div>
+      </div>
+
+      <p>
+        📍 Venue: <strong>Allakas Complete Family Shopping Mall</strong><br />
+        <!-- <p style="text-align: center; font-size: 7px">
+          Note: CMR and Chandana Brothers are part of the same firm as Allakas.
+        </p> -->
+      </p>
+      <p>
+        Kalimatha Mandir main road, Sun city, Hyderabad- 91.<br />+91 8019672999
+      </p>
+    </section>
+
+    <div class="social">
+      <a
+        href="https://www.facebook.com/profile.php?id=61580492132086"
+        target="_blank"
+        ><img src="/assets/images/fb.png"
+      /></a>
+      <a href="https://www.instagram.com/allakas1/" target="_blank"
+        ><img src="/assets/images/insta.png"
+      /></a>
+      <a href="https://www.youtube.com/@allakasofficial" target="_blank"
+        ><img src="/assets/images/youtubeIcon.png"
+      /></a>
+    </div>
+    <p style="text-align: center; font-size: 11px">
+      CMR Family Mall, Chandana Brothers and Allakas are part of Chandana
+      Brothers Textiles & Jewellers Pvt. Ltd.
+    </p>
+
+    <script>
+      // Countdown timer
+      const eventDate = new Date("Sep 22, 2025 11:00:00").getTime();
+      const timer = setInterval(function () {
+        const now = new Date().getTime();
+        const distance = eventDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerText = days;
+        document.getElementById("hours").innerText = hours;
+        document.getElementById("minutes").innerText = minutes;
+        document.getElementById("seconds").innerText = seconds;
+
+        if (distance < 0) {
+          clearInterval(timer);
+          document.getElementById("countdown").innerHTML = "We are Open Now!";
+        }
+      }, 1000);
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-KMRMR9FQS9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-KMRMR9FQS9");
+    </script>
+  </body>
+</html>
