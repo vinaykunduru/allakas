@@ -39,7 +39,10 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/skins/skin-demo-5.css" />
     <link rel="stylesheet" href="assets/css/demos/demo-5.css" />
-    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://eyecatcharchitects.com/site/wp-content/themes/EyeCatchArchitects/assets/css/glightbox.min.css"
+    />
 
     <style>
       header.header {
@@ -66,14 +69,14 @@
       .grid-container1 {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-gap: 10px;
+        grid-template-rows: 1fr 50px;
+        grid-gap: 15px;
         padding: 0;
       }
       .item {
         position: relative;
         overflow: hidden;
-        border-radius: 0;
+        border-radius: 10px;
       }
       .item img {
         width: 100%;
@@ -102,41 +105,30 @@
 
       /* Specific grid layout */
       .grid-container1 .item-1 {
-        grid-row: span 2 / span 2;
-        max-height: 400px;
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
       }
       .grid-container1 .item-2 {
-        grid-row: span 2 / span 2;
-        max-height: 400px;
+        grid-column: 1 / 1;
+        grid-row: 4 / 2;
       }
       .grid-container1 .item-3 {
-        grid-row: span 2 / span 2;
-        grid-column-start: 1;
-        grid-row-start: 3;
-        max-height: 400px;
+        grid-column: 2 / 2;
+        grid-row: 4 / 2;
       }
       .grid-container1 .item-4 {
-        grid-row: span 2 / span 2;
-        grid-column-start: 2;
-        grid-row-start: 3;
-        max-height: 400px;
-      }
-      .grid-container1 .item-5 {
-        grid-column: span 2 / span 2;
-        grid-row: span 4 / span 4;
-        grid-column-start: 3;
-        grid-row-start: 1;
-        max-height: 810px;
+        grid-column: 3 / 5;
+        grid-row: 1 / 4;
       }
 
       /* Overlay button on item 4 */
       .overlay-btn {
         position: absolute;
-        top: 20px;
-        left: 20px;
-        /* transform: translate(-50%, -50%); */
-        background: rgba(255, 255, 255, 0.9);
-        color: #001960;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
         padding: 12px 25px;
         border-radius: 30px;
         font-weight: 600;
@@ -144,8 +136,8 @@
         transition: all 0.3s ease;
       }
       .overlay-btn:hover {
-        background: #001960;
-        color: #fff;
+        background: #fff;
+        color: #000;
         text-decoration: none;
       }
 
@@ -172,44 +164,54 @@
       .grid-container2 {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-gap: 10px;
-        padding: 0;
-        margin-top: 10px;
+        grid-template-rows: auto;
+        grid-gap: 15px;
+        padding: 0px;
+        margin-top: 15px;
+        margin-bottom: 15px;
       }
 
       /* Specific grid layout */
       .grid-container2 .item-1 {
-        grid-column: span 2 / span 2;
-        grid-row: span 4 / span 4;
-        grid-column-start: 1;
-        grid-row-start: 1;
-        max-height: 810px;
+        grid-column: 1 / 3;
+        grid-row: 1 / 4;
       }
       .grid-container2 .item-2 {
-        grid-row: span 2 / span 2;
-        max-height: 400px;
+        grid-column: 3 / 5;
+        grid-row: 1 / 2;
       }
       .grid-container2 .item-3 {
-        grid-row: span 2 / span 2;
-        grid-column-start: 3;
-        grid-row-start: 3;
-        max-height: 400px;
+        grid-column: 3 / 4;
+        grid-row: 4 / 2;
       }
       .grid-container2 .item-4 {
-        grid-row: span 2 / span 2;
-        grid-column-start: 4;
-        grid-row-start: 3;
-        max-height: 400px;
+        grid-column: 4 / 5;
+        grid-row: 4 / 2;
       }
-      .grid-container2 .item-5 {
-        grid-row: span 2 / span 2;
-        max-height: 400px;
+
+      /* Overlay button on item 4 */
+      .overlay-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        padding: 12px 25px;
+        border-radius: 30px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+      .overlay-btn:hover {
+        background: #fff;
+        color: #000;
+        text-decoration: none;
       }
 
       /* Responsive layout */
       @media (max-width: 991px) {
-        .grid-container2 {
+        .grid-container1 {
           grid-template-columns: repeat(2, 1fr);
         }
         .item-4 {
@@ -218,18 +220,12 @@
         }
       }
       @media (max-width: 575px) {
-        .grid-container2 {
+        .grid-container1 {
           grid-template-columns: 1fr;
         }
         .item {
           grid-column: auto !important;
           grid-row: auto !important;
-        }
-      }
-
-      @media (min-width: 769px) {
-        .goverlay {
-          background: rgba(0, 0, 0, 0.7);
         }
       }
     </style>
@@ -321,9 +317,9 @@
                     </div>
                     <!-- End .megamenu megamenu-sm -->
                   </li>
-                  <!-- <li>
-                    <a href="#" class="">Offers</a>
-                  </li> -->
+                  <li>
+                    <a href="blog.html" class="">Blog</a>
+                  </li>
                   <li>
                     <a href="contact.html" class="">Contact</a>
                   </li>
@@ -393,109 +389,37 @@
         <!-- End .container -->
 
         <div class="page-content pb-0">
-          <div class="container-fluid py-5">
+          <div class="container py-5">
             <!-- Card style grid -->
             <div class="grid-container1">
               <!-- Item 1 -->
               <div class="item item-1">
                 <a
-                  href="/assets/images/t1.jpg"
+                  href="https://placehold.co/800x800"
                   class="glightbox"
                   data-title="Headline - For Everyone"
                   data-description="We establish personal relationships with our boutiques."
                 >
-                  <img src="/assets/images/t1.jpg" alt="Blog Image 1" />
-                  <!-- <div class="item-content">
+                  <img src="/assets/images/g1.jpg" alt="Blog Image 1" />
+                  <div class="item-content">
                     <h4>For Everyone</h4>
                     <p>But not anyone</p>
-                  </div> -->
+                  </div>
                 </a>
               </div>
 
               <!-- Item 2 -->
               <div class="item item-2">
                 <a
-                  href="/assets/images/t2.jpg"
+                  href="https://placehold.co/800x600"
                   class="glightbox"
                   data-title="#RIPSTOP"
                   data-description="Durable, lightweight, and stylish."
                 >
-                  <img src="/assets/images/t2.jpg" alt="Blog Image 2" />
-                  <!-- <div class="item-content">
+                  <img src="/assets/images/g1.jpg" alt="Blog Image 2" />
+                  <div class="item-content">
                     <h4>#RIPSTOP</h4>
-                  </div> -->
-                </a>
-              </div>
-
-              <!-- Item 3 -->
-              <div class="item item-3">
-                <a
-                  href="/assets/images/t3.jpg"
-                  class="glightbox"
-                  data-title="#INSULATED"
-                  data-description="Built for comfort and performance."
-                >
-                  <img src="/assets/images/t3.jpg" alt="Blog Image 3" />
-                  <!-- <div class="item-content">
-                    <h4>#INSULATED</h4>
-                  </div> -->
-                </a>
-              </div>
-              <!-- Item 4 -->
-              <div class="item item-4">
-                <a
-                  href="/assets/images/t4.jpg"
-                  class="glightbox"
-                  data-title="Headline - For Everyone"
-                  data-description="We establish personal relationships with our boutiques."
-                >
-                  <img src="/assets/images/t4.jpg" alt="Blog Image 1" />
-                  <!-- <div class="item-content">
-                    <h4>For Everyone</h4>
-                    <p>But not anyone</p>
-                  </div> -->
-                </a>
-              </div>
-
-              <!-- Item 5 (video thumbnail) -->
-              <div class="item item-5">
-                <a
-                  href="https://www.youtube.com/watch?v=zYEcXATM92I"
-                  class="glightbox3"
-                >
-                  <img src="/assets/images/v1.jpg" alt="Video Thumbnail" />
-                  <span class="overlay-btn">Watch Video</span>
-                </a>
-              </div>
-            </div>
-
-            <!-- Card style grid -->
-
-            <!-- Card style grid -->
-            <div class="grid-container2">
-              <!-- Item 1 -->
-              <div class="item item-1">
-                <a
-                  href="https://www.youtube.com/watch?v=zYEcXATM92I"
-                  class="glightbox3"
-                >
-                  <img src="/assets/images/g2.jpg" alt="Video Thumbnail" />
-                  <span class="overlay-btn">Watch Video</span>
-                </a>
-              </div>
-
-              <!-- Item 2 -->
-              <div class="item item-2">
-                <a
-                  href="/assets/images/t2-1.jpg"
-                  class="glightbox"
-                  data-title="#RIPSTOP"
-                  data-description="Durable, lightweight, and stylish."
-                >
-                  <img src="/assets/images/t2-1.jpg" alt="Blog Image 2" />
-                  <!-- <div class="item-content">
-                    <h4>#RIPSTOP</h4>
-                  </div> -->
+                  </div>
                 </a>
               </div>
 
@@ -513,7 +437,63 @@
                   </div>
                 </a>
               </div>
-              <!-- Item 4 -->
+
+              <!-- Item 4 (video thumbnail) -->
+              <div class="item item-4">
+                <a
+                  href="https://www.youtube.com/watch?v=zYEcXATM92I"
+                  class="glightbox3"
+                >
+                  <img src="/assets/images/g2.jpg" alt="Video Thumbnail" />
+                  <span class="overlay-btn">Watch Video</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card style grid -->
+            <div class="grid-container2">
+              <!-- Item 1 -->
+              <div class="item item-1">
+                <a
+                  href="https://www.youtube.com/watch?v=zYEcXATM92I"
+                  class="glightbox3"
+                >
+                  <img src="/assets/images/g2.jpg" alt="Video Thumbnail" />
+                  <span class="overlay-btn">Watch Video</span>
+                </a>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="item item-2">
+                <a
+                  href="https://placehold.co/800x600"
+                  class="glightbox"
+                  data-title="#RIPSTOP"
+                  data-description="Durable, lightweight, and stylish."
+                >
+                  <img src="/assets/images/g1.jpg" alt="Blog Image 2" />
+                  <div class="item-content">
+                    <h4>#RIPSTOP</h4>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="item item-3">
+                <a
+                  href="https://placehold.co/800x600"
+                  class="glightbox"
+                  data-title="#INSULATED"
+                  data-description="Built for comfort and performance."
+                >
+                  <img src="/assets/images/g1.jpg" alt="Blog Image 3" />
+                  <div class="item-content">
+                    <h4>#INSULATED</h4>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Item 4 (video thumbnail) -->
               <div class="item item-4">
                 <a
                   href="https://placehold.co/800x800"
@@ -528,24 +508,7 @@
                   </div>
                 </a>
               </div>
-
-              <!-- Item 5 (video thumbnail) -->
-              <div class="item item-5">
-                <a
-                  href="https://placehold.co/800x800"
-                  class="glightbox"
-                  data-title="Headline - For Everyone"
-                  data-description="We establish personal relationships with our boutiques."
-                >
-                  <img src="/assets/images/g1.jpg" alt="Blog Image 1" />
-                  <div class="item-content">
-                    <h4>For Everyone</h4>
-                    <p>But not anyone</p>
-                  </div>
-                </a>
-              </div>
             </div>
-            <!-- Grid container -->
           </div>
           <!-- /.container -->
 
@@ -710,9 +673,9 @@
                 </li>
               </ul>
             </li>
-            <!-- <li>
-              <a href="#">Offers</a>
-            </li> -->
+            <li>
+              <a href="blog.html">Blog</a>
+            </li>
             <li>
               <a href="contact.html">Contact</a>
             </li>
