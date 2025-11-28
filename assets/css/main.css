@@ -9515,7 +9515,7 @@ button:focus {
 }
 .brand img {
   width: auto !important;
-  max-width: 100% !important;
+  max-width: 60% !important;
 }
 .brand:focus {
   outline: none !important;
